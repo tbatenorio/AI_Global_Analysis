@@ -19,6 +19,12 @@ bHeader = st.container()
 bSidebar = st.sidebar
 bBox1 = st.container()
 
+insith_04 = """
+**United States and China are the top 2 nations according to 'Total Score' in the 
+AI ​​sector. These are followed by Canada and some European countries. The rest of 
+the countries have little representation in the sector.**.
+"""
+
 with bHeader:
     # elemento de titulo
     st.title("AI World Map Indicators")  
@@ -60,6 +66,11 @@ with bBox1:
     choropleth.geojson.add_to(map)
 
     st_map = st_folium(map, width=700, height=700)
+
+    #Insight
+    st.markdown(insith_04)
+
+    
     
 
 
